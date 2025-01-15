@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- CDN DE FONT AWESOME Y BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- ICONO DE LA PESTAÑA -->
+    <link rel="icon" type="image/png" href="img/portafolio.png">
+    <title>CURRICULUM VITAE GABRIELA</title>
+</head>
+<body>
+    <!--Este es un archivo que nos servira para ver como funciona cada cosa y entender de una vez por todo como funciona -->
+    
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gabriela López</a>
+            </div>
+            <nav >
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#certificaciones" onclick="seleccionar()">CERTIFICACIONES</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="">
+            </div>
+            <h1>Gabriela López Diego</h1>
+            <h2>Estudiante en Ciencias de la Computación</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN SOBRE MI -->
+     <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p><span>Hola, soy Gabriela</span> una joven estudiante de 22 años, actualmente me encuentro cursando mi último semestre en la Universidad. A lo largo de mis estudios universitarios, me he destacado por ser alguien comprometida con su trabajo y curiosa por encontrar oportunidades que me ofrezcan crecer tanto personal como profesionalmente. </p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>DATOS PERSONALES</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de cumpleaños</strong>
+                            30 de Abril del 2002 
+                        </li>
+                        <li>
+                            <strong>No. de Celular</strong>
+                            (+52) 55 3921 1840
+                        </li>
+                        <li>
+                            <strong>Sede</strong>
+                            Estado De México, México.
+                        </li>
+                        <li>
+                            <strong>Idiomas</strong>
+                            Español, Inglés B1.
+                        </li>
+                        <li>
+                            <strong>Correo</strong>
+                            gabriela_164@ciencias.unam.mx
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>INTERESES</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Inteligencia Artificial</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-user-secret"></i>
+                            <span>Ciberseguridad</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Desarrollo de Software</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-android"></i>
+                            <span>Aplicaciones móviles</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>Realidad Virtual</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>Análisis de datos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-rays"></i>
+                            <span>Colaboración en proyectos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-cubes"></i>
+                            <span>Algoritmos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV en pdf <i class="fa-solid fa-download"></i>
+            </button>            
+        </div>
+     </section>
+
+
+
+
+
+
+    <!-- SECCIÓN SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Conocimientos técnicos</h3>
+
+
+                    
+
+                    <div class="skill">
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>Python</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>Java</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>Haskell</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>R</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>Coq</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>Prolog</span>
+                    </div>
+
+                    <div class="skill">
+                        <span>C</span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>Habilidades blandas</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>EDUCACIÓN</h3>
+                    
+                    <div class="item izq">
+                        <h4>Ciencias de la Computación</h4>
+                        <span class="casa">Universidad Nacional Autonoma De México (UNAM) </span>
+                        <span class="fecha"> 2020 - 2025</span>
+                        <p>La Licenciatura en Ciencias de la Computación es una disciplina que combina matemáticas, lógica y tecnología para diseñar, analizar y desarrollar soluciones computacionales. Durante la carrera, se adquieren habilidades en programación, inteligencia artificial, desarrollo de software, ciberseguridad y optimización de sistemas. Es una formación integral que permite resolver problemas complejos a través de la innovación tecnológica y la automatización.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item izq">
+                        <h4>Bachillerato</h4>
+                        <span class="casa">Colegio de Ciencias y Humanidades Plantel Sur (CCH Sur)</span>
+                        <span class="fecha">2017-2020</span>
+                        <p>Institución educativa perteneciente a la Universidad Nacional Autónoma de México (UNAM). Reconocido por su enfoque en el aprendizaje autónomo y crítico, ofrece una formación integral que combina ciencias, humanidades y disciplinas técnicas. Es un espacio donde los estudiantes desarrollan habilidades analíticas, creativas y sociales, preparándose para afrontar retos en la educación superior y en la sociedad.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>EXPERIENCIA</h3>
+                    <div class="item der">
+                        <h4>Servicio social</h4>
+                        <span class="casa">Nombre de la institución</span>
+                        <span class="fecha">2025(6 meses) </span>
+                        <p>En esta Institución</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- SECCION PORTFOLIO -->
+     <section id="portafolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <a href="https://github.com/Gabriela164/Proyecto-ingenieria-software"  >
+                    <div class="proyecto">
+                        <img src="img/code.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Michigames - página web</h3>
+                            <p>Proyecto académico</p>
+                        </div>
+                    </div>
+                </a>                
+                <div class="proyecto">
+                    <img src="img/code4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Bloc de notas - Página web</h3>
+                        <p>Proyecto académico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/code5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Family Cook - Aplicación Móvil </h3>
+                        <p>Proyecto académico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Seccion certificaciones-->
+    <section id="certificaciones" class="certificaciones">
+        <div class="contenido-seccion">
+            <h2>CERTIFICACIONES RELEVANTES</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/certificaciones_img/certificado1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Activos, amenazas y vulnerabilidades.</h5>
+                  <p>Empresa emisora: Google
+                    Fecha: Diciembre 2024
+                  </p>
+                  <a href="#" class="btn btn-primary">Ir al certificado</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/certificaciones_img/certificado2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Herramientas del oficio: Linux y SQL</h5>
+                  <p>Empresa emisora: Google
+                    Fecha: Diciembre 2024
+                  </p>
+                  <a href="#" class="btn btn-primary">Ir al certificado</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/certificaciones_img/certificado3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Introducción al desarrollo web</h5>
+                  <p>Empresa emisora: Desafío Latam
+                    Fecha: Diciembre 2024
+                  </p>
+                  <a href="#" class="btn btn-primary">Ir al certificado</a>               
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/certificaciones_img/certificado4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ve a lo seguro: Gestiona los riesgos de seguridad</h5>
+                  <p>Empresa emisora: Google
+                    Fecha: Diciembre 2024
+                  </p>
+                <a href="#" class="btn btn-primary">Ir al certificado</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                  <img src="img/certificaciones_img/certificado5.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CSS avanzado</h5>
+                    <p>Empresa emisora: Desafío Latam
+                        Fecha: Diciembre 2024
+                      </p>                    <a href="#" class="btn btn-primary">Ir al certificado</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/certificaciones_img/certificado6.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Introducción al análisis de datos con python</h5>
+                    <p>Empresa emisora: Desafío Latam 
+                        Fecha: Diciembre 2024
+                      </p>
+                      <a href="#" class="btn btn-primary">Ir al certificado</a>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+        
+
+        
+        
+        
+          
+    </section>
+
+    
+
+    
+    
+
+
+
+
+
+
+</body>
+
+</html>
